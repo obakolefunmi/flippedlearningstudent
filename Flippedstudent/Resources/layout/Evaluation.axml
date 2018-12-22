@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar1" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/evalholder">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1">
+            <android.support.v7.widget.CardView
+                android:minWidth="25px"
+                android:minHeight="250dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/cardView1"
+                android:layout_margin="12dp">
+                    <TextView
+                        android:text="Question"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/evalquestion"
+                        android:layout_margin="15dp" />
+                
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:text="Select One Option"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:layout_margin="10dp" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/evalradiogroup">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="A"
+                    android:id="@+id/evaloptionA"
+                    android:layout_margin="10dp"
+                    android:onClick="option_selected" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:id="@+id/evaloptionB"
+                    android:layout_margin="10dp"
+                    android:onClick="option_selected" />
+                <RadioButton
+                    android:text="C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/evaloptionC"
+                    android:layout_margin="10dp"
+                    android:onClick="option_selected" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:id="@+id/evaloptionD"
+                    android:layout_margin="10dp"
+                    android:onClick="option_selected" />
+            </RadioGroup>
+            <TextView
+                android:text="Next"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/evalNext"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="#ff420f41" />
+            <TextView
+                android:text="Finish"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/evalFinish"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#ff420f41" />
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/evalpgb"
+        android:visibility="gone" />
+</LinearLayout>

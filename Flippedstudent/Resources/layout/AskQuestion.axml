@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="#ff7d1c7a"
+        android:id="@+id/toolbarask" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/askpgb"
+        android:visibility="gone" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/askHolder"
+        android:gravity="right">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputLayout1"
+            android:layout_margin="20dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Any Questions?"
+                android:id="@+id/askedit" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/askfab"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-35dp"
+            android:src="@drawable/ic_question"
+            app:backgroundTint="#ffffffff"
+            app:fabSize="mini" />
+    </LinearLayout>
+</LinearLayout>
